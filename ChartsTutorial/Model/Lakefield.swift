@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct House: Identifiable {
+struct House: Identifiable, Hashable {
     let id = UUID()
     let name: String
     let head: String
