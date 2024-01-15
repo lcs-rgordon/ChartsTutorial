@@ -39,23 +39,56 @@ struct HouseProportionView: View {
     
     var body: some View {
         NavigationStack {
-            VStack(spacing: 40) {
+            VStack(spacing: 20) {
                 
                 Text("Percentage of students at LCS, by house")
                     .font(.largeTitle)
                 
-                Chart(studentsByHouse) { house in
+                Chart(studentsByHouse.indices, id: \.self) { index in
                     SectorMark(
-                        angle: .value("Count", house.studentCount)
+                        angle: .value("Count", studentsByHouse[index].studentCount)
                     )
-                    .foregroundStyle(by: .value("House", house.houseName))
+                    .foregroundStyle(
+                        Color(
+                            hue: Double(index) * (360.0 / Double(studentsByHouse.count)) / 360.0,
+                            saturation: 0.8,
+                            brightness: 0.9
+                        )
+                    )
                     .annotation(position: .overlay) {
-                        Text(percentageOfAllStudents(house.studentCount))
+                        Text(percentageOfAllStudents(studentsByHouse[index].studentCount))
                             .foregroundStyle(.white)
                             .bold()
                             .font(.caption)
                     }
                 }
+                
+                let fourColumns = [GridItem(), GridItem(), GridItem(), GridItem()]
+                
+
+                LazyVGrid(columns: fourColumns) {
+                    ForEach(studentsByHouse.indices, id: \.self) { index in
+                        HStack {
+                            
+                            Circle()
+                                .frame(width: 10)
+                                .foregroundStyle(
+                                    Color(
+                                        hue: Double(index) * (360.0 / Double(studentsByHouse.count)) / 360.0,
+                                        saturation: 0.8,
+                                        brightness: 0.9
+                                    )
+                                    
+                                )
+                            
+                            Text(studentsByHouse[index].houseName)
+                                .font(.caption)
+                            
+                            Spacer()
+                        }
+                    }
+                }
+                .padding(.leading, 45)
 
             }
             .padding(.horizontal, 40)
