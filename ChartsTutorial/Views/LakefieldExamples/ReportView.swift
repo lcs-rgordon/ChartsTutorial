@@ -10,11 +10,14 @@ import Charts
 
 struct ReportView: View {
     var body: some View {
-        NavigationStack {
+        
+        let report = reportList.randomElement()!
+        
+        return NavigationStack {
             VStack {
-                Text("Report for: \(reportList.first!.student.name)")
+                Text("Report for: \(report.student.name)")
                     .font(.largeTitle)
-                Chart(reportList.first!.results) { result in
+                Chart(report.results) { result in
                     BarMark(
                         x: .value("Course", result.course.code),
                         y: .value("Grade", result.currentGrade)
@@ -29,6 +32,7 @@ struct ReportView: View {
                 .padding(.horizontal, 40)
             }
             .padding()
+            .frame(width: 600, height: 400)
             .navigationTitle("Student report")
         }
     }
