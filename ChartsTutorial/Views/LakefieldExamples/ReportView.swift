@@ -9,12 +9,16 @@ import SwiftUI
 import Charts
 
 struct ReportView: View {
+    
+    // MARK: Stored properties
+    let report = reportList.randomElement()!
+
+    // MARK: Computed properties
     var body: some View {
         
-        let report = reportList.randomElement()!
-        
-        return NavigationStack {
+        NavigationStack {
             VStack {
+                
                 Text("Report for: \(report.student.name)")
                     .font(.largeTitle)
                 Chart(report.results) { result in
