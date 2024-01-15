@@ -17,6 +17,8 @@
 		8124A3F42B55A00D0085F764 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124A3F32B55A00D0085F764 /* Double.swift */; };
 		8124A3F62B55B1FC0085F764 /* HouseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124A3F52B55B1FC0085F764 /* HouseView.swift */; };
 		8124A3F82B55BDBD0085F764 /* HouseViewSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124A3F72B55BDBD0085F764 /* HouseViewSimple.swift */; };
+		813992D42B55BECB0015FB70 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813992D32B55BECB0015FB70 /* LandingView.swift */; };
+		813992F92B55EA8E0015FB70 /* HouseProportionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813992F82B55EA8E0015FB70 /* HouseProportionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		8124A3F32B55A00D0085F764 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		8124A3F52B55B1FC0085F764 /* HouseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseView.swift; sourceTree = "<group>"; };
 		8124A3F72B55BDBD0085F764 /* HouseViewSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewSimple.swift; sourceTree = "<group>"; };
+		813992D32B55BECB0015FB70 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
+		813992F82B55EA8E0015FB70 /* HouseProportionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseProportionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 			children = (
 				8124A3EF2B5599000085F764 /* LakefieldExamples */,
 				8124A3EB2B5572F70085F764 /* VideoExamples */,
+				813992D32B55BECB0015FB70 /* LandingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +120,7 @@
 				8124A3F02B55992E0085F764 /* ReportView.swift */,
 				8124A3F52B55B1FC0085F764 /* HouseView.swift */,
 				8124A3F72B55BDBD0085F764 /* HouseViewSimple.swift */,
+				813992F82B55EA8E0015FB70 /* HouseProportionView.swift */,
 			);
 			path = LakefieldExamples;
 			sourceTree = "<group>";
@@ -197,6 +203,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813992D42B55BECB0015FB70 /* LandingView.swift in Sources */,
+				813992F92B55EA8E0015FB70 /* HouseProportionView.swift in Sources */,
 				8124A3E72B55725D0085F764 /* NominalChartExample.swift in Sources */,
 				8124A3F82B55BDBD0085F764 /* HouseViewSimple.swift in Sources */,
 				8124A3D72B55720B0085F764 /* ChartsTutorialApp.swift in Sources */,

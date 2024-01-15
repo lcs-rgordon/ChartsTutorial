@@ -11,7 +11,7 @@ import SwiftUI
 struct ChartsTutorialApp: App {
     var body: some Scene {
         WindowGroup {
-            HouseView()
+            ReportView()
         }
     }
 }

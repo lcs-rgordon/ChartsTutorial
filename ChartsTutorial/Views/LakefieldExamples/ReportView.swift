@@ -37,11 +37,11 @@ struct ReportView: View {
                 }
                 .padding(.horizontal, 40)
                 
-                Button(action: {
-                    report = reportList.randomElement()!
-                }, label: {
-                    Text("Get another")
-                })
+//                Button(action: {
+//                    report = reportList.randomElement()!
+//                }, label: {
+//                    Text("Get another")
+//                })
 
             }
             .padding()
