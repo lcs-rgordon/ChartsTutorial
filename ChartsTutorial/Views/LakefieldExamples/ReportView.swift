@@ -11,16 +11,18 @@ import Charts
 struct ReportView: View {
     
     // MARK: Stored properties
-    let report = reportList.randomElement()!
+    @State var report = reportList.randomElement()!
 
     // MARK: Computed properties
     var body: some View {
         
         NavigationStack {
-            VStack {
+            VStack(spacing: 40) {
                 
                 Text("Report for: \(report.student.name)")
                     .font(.largeTitle)
+                
+                
                 Chart(report.results) { result in
                     BarMark(
                         x: .value("Course", result.course.code),
@@ -34,9 +36,16 @@ struct ReportView: View {
                     }
                 }
                 .padding(.horizontal, 40)
+                
+                Button(action: {
+                    report = reportList.randomElement()!
+                }, label: {
+                    Text("Get another")
+                })
+
             }
             .padding()
-            .frame(width: 600, height: 400)
+            .frame(width: 600, height: 500)
             .navigationTitle("Student report")
         }
     }
