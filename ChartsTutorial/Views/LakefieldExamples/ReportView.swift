@@ -20,6 +20,11 @@ struct ReportView: View {
                         y: .value("Grade", result.currentGrade)
                     )
                     .foregroundStyle(by: .value("Course", result.course.name))
+                    .annotation(position: .overlay) {
+                        Text(result.currentGrade.roundedTo(precision: 1).asString())
+                            .foregroundStyle(.white)
+                            .bold()
+                    }
                 }
                 .padding(.horizontal, 40)
             }

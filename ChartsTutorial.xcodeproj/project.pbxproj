@@ -14,6 +14,7 @@
 		8124A3EA2B55726F0085F764 /* TemporalChartExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124A3E92B55726F0085F764 /* TemporalChartExample.swift */; };
 		8124A3EE2B5575C60085F764 /* Lakefield.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124A3ED2B5575C60085F764 /* Lakefield.swift */; };
 		8124A3F12B55992E0085F764 /* ReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124A3F02B55992E0085F764 /* ReportView.swift */; };
+		8124A3F42B55A00D0085F764 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124A3F32B55A00D0085F764 /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		8124A3E92B55726F0085F764 /* TemporalChartExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemporalChartExample.swift; sourceTree = "<group>"; };
 		8124A3ED2B5575C60085F764 /* Lakefield.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lakefield.swift; sourceTree = "<group>"; };
 		8124A3F02B55992E0085F764 /* ReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportView.swift; sourceTree = "<group>"; };
+		8124A3F32B55A00D0085F764 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				8124A3D62B55720B0085F764 /* ChartsTutorialApp.swift */,
+				8124A3F22B559FEF0085F764 /* Extensions */,
 				8124A3E52B55724D0085F764 /* Views */,
 				8124A3EC2B5575930085F764 /* Model */,
 				8124A3DA2B55720C0085F764 /* Assets.xcassets */,
@@ -108,6 +111,14 @@
 				8124A3F02B55992E0085F764 /* ReportView.swift */,
 			);
 			path = LakefieldExamples;
+			sourceTree = "<group>";
+		};
+		8124A3F22B559FEF0085F764 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8124A3F32B55A00D0085F764 /* Double.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				8124A3D72B55720B0085F764 /* ChartsTutorialApp.swift in Sources */,
 				8124A3EE2B5575C60085F764 /* Lakefield.swift in Sources */,
 				8124A3F12B55992E0085F764 /* ReportView.swift in Sources */,
+				8124A3F42B55A00D0085F764 /* Double.swift in Sources */,
 				8124A3EA2B55726F0085F764 /* TemporalChartExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
