@@ -38,7 +38,9 @@ struct HouseView: View {
             )
         }
         
-        return studentsByHouse
+        return studentsByHouse.sorted(by: { lhs, rhs in
+            lhs.studentCount < rhs.studentCount
+        })
         
     }
     
@@ -48,7 +50,6 @@ struct HouseView: View {
                 
                 Text("Count of students by house")
                     .font(.largeTitle)
-                
                 
                 Chart(studentsByHouse) { house in
                     BarMark(
@@ -62,6 +63,7 @@ struct HouseView: View {
                             .bold()
                     }
                 }
+                .chartLegend(.hidden)
             }
             .padding(.horizontal, 40)
             
