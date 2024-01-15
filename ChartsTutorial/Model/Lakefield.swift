@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct House {
+struct House: Identifiable {
+    let id = UUID()
     let name: String
     let head: String
     let support: String
@@ -100,7 +101,8 @@ let houseList = [
     parent
 ]
 
-struct Student {
+struct Student: Identifiable {
+    let id = UUID()
     let name: String
     let house: House
 }
@@ -321,7 +323,8 @@ var students = [
 
 ]
 
-struct Course {
+struct Course: Identifiable {
+    let id = UUID()
     let name: String
     let code: String
     let teacher: String
@@ -419,15 +422,17 @@ let tej3m = Course(
 
 let courseList = [ics3u, ada3o, mcr3u, eng3u, cha3u, chw3m, sch3u, sbi3u, sph3u, amu3m, avi3m, baf3m, hsp3u, fsf3u, tej3m]
 
-struct Result {
+struct Result: Identifiable {
     
+    let id = UUID()
     let course: Course
     let currentGrade: Double
     
 }
 
-struct Report {
+struct Report: Identifiable {
     
+    let id = UUID()
     let student: Student
     let results: [Result]
     
