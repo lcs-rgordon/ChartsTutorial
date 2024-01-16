@@ -19,6 +19,7 @@
 		8124A3F82B55BDBD0085F764 /* HouseViewSimple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8124A3F72B55BDBD0085F764 /* HouseViewSimple.swift */; };
 		813992D42B55BECB0015FB70 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813992D32B55BECB0015FB70 /* LandingView.swift */; };
 		813992F92B55EA8E0015FB70 /* HouseProportionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813992F82B55EA8E0015FB70 /* HouseProportionView.swift */; };
+		8147013B2B5600FD00EEE66D /* SimplePieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8147013A2B5600FD00EEE66D /* SimplePieChart.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		8124A3F72B55BDBD0085F764 /* HouseViewSimple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewSimple.swift; sourceTree = "<group>"; };
 		813992D32B55BECB0015FB70 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		813992F82B55EA8E0015FB70 /* HouseProportionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseProportionView.swift; sourceTree = "<group>"; };
+		8147013A2B5600FD00EEE66D /* SimplePieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimplePieChart.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				8124A3F52B55B1FC0085F764 /* HouseView.swift */,
 				8124A3F72B55BDBD0085F764 /* HouseViewSimple.swift */,
 				813992F82B55EA8E0015FB70 /* HouseProportionView.swift */,
+				8147013A2B5600FD00EEE66D /* SimplePieChart.swift */,
 			);
 			path = LakefieldExamples;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				8124A3F12B55992E0085F764 /* ReportView.swift in Sources */,
 				8124A3F62B55B1FC0085F764 /* HouseView.swift in Sources */,
 				8124A3F42B55A00D0085F764 /* Double.swift in Sources */,
+				8147013B2B5600FD00EEE66D /* SimplePieChart.swift in Sources */,
 				8124A3EA2B55726F0085F764 /* TemporalChartExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
